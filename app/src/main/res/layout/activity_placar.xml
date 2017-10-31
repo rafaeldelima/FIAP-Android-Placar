@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/activity_placar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    tools:context="br.com.fiap.placar.PlacarActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            tools:text="Time A"
+            style="@style/elemento_placar_titulo"
+            android:id="@+id/tvTimeDaCasa" />
+
+        <TextView
+            tools:text="Time B"
+            style="@style/elemento_placar_titulo"
+            android:id="@+id/tvTimeVisitante" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:text="0"
+            style="@style/elemento_placar_gol"
+            android:id="@+id/tvPlacarTimeDaCasa" />
+
+        <TextView
+            android:text="0"
+            style="@style/elemento_placar_gol"
+            android:id="@+id/tvPlacarTimeVisitante" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:text="GOL"
+            style="@style/elemento_placar_titulo"
+            android:id="@+id/btGolTimeDaCasa"
+            android:onClick="golCasa" />
+
+        <Button
+            android:text="GOL"
+            style="@style/elemento_placar_titulo"
+            android:id="@+id/btGolTimeVisitante"
+            android:onClick="golVisitante" />
+
+    </LinearLayout>
+
+</LinearLayout>
